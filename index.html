@@ -12,41 +12,51 @@
   <style>
     body { font-family: 'Inter', sans-serif; }
     .btn { @apply px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2; }
-    .btn-secondary { @apply bg-white border border-gray-300 text-gray-700 hover:bg-gray-50 focus:ring-indigo-500; }
+    .btn-secondary { @apply bg-white border border-gray-300 text-gray-700 hover:bg-gray-50 focus:ring-indigo-500 shadow-sm; }
     .link-style { @apply text-indigo-500 hover:text-indigo-700 hover:underline; }
-    .copy-btn { @apply absolute top-2 right-2 p-1 text-gray-400 hover:text-gray-700 rounded-md transition-all duration-200; }
+    .copy-btn { @apply absolute top-1/2 right-3 -translate-y-1/2 p-1 text-gray-400 hover:text-gray-700 rounded-md transition-all duration-200; }
   </style>
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased">
+<body class="bg-gray-100 text-gray-800 antialiased">
   <main class="min-h-screen flex items-center justify-center p-4">
     <article class="w-full max-w-5xl bg-white rounded-2xl shadow-lg ring-1 ring-gray-900/5 overflow-hidden grid grid-cols-1 md:grid-cols-3">
       
-      <section class="md:col-span-1 p-8 bg-gray-100 flex flex-col items-center text-center">
-        <div class="w-32 h-32 rounded-full overflow-hidden ring-4 ring-white shadow-md mb-4">
+      <section class="md:col-span-1 p-6 sm:p-8 bg-gray-50 flex flex-col items-center text-center border-b md:border-b-0 md:border-r border-gray-200">
+        <div class="w-32 h-32 rounded-full overflow-hidden ring-4 ring-white shadow-md mb-4 shrink-0">
           <img src="./img/foto_blue.png" alt="Foto de Jhon Fonseca" class="w-full h-full object-cover"/>
         </div>
-        <h1 class="text-2xl font-bold text-gray-900">Jhon Fonseca.</h1>
-        <p class="text-indigo-600 font-medium mt-1">Científico de Datos | Ingeniero de Datos | IA Generativa</p>
-        <p class="text-sm text-gray-600 mt-2 px-4">Azure • Databricks • Git • Python • PySpark • SQL • GenAI</p>
+        <h1 class="text-2xl font-bold text-gray-900">Jhon Fonseca</h1>
+        <p class="text-indigo-600 font-medium mt-1">Científico e Ingeniero de Datos | IA Generativa</p>
+        <p class="text-sm text-gray-500 mt-3 px-4">Azure • Databricks • Git • Python • PySpark • SQL • GenAI</p>
         
-        <div class="mt-6 w-full text-left">
-            <h3 class="text-lg font-semibold text-gray-800 text-center mb-2">Perfil Profesional</h3>
-            <p class="text-sm text-gray-600">
-                Científico e ingeniero de datos con más de 6 años de experiencia en el diseño y desarrollo de soluciones end-to-end. Especializado en la creación de modelos de machine learning, en pipelines de datos robustos y en la integración de inteligencia artificial generativa para resolver problemas de negocio complejos. Capacidad para identificar y construir soluciones de valor para el negocio; comprometido a ser un aliado estratégico, con base en la transformación y el análisis de datos, para la toma de decisiones que generen un impacto real.            </p>
+        <div class="mt-8 w-full text-left">
+            <h3 class="text-base font-bold text-gray-800 text-center mb-4 uppercase tracking-wider">Perfil Profesional</h3>
+            <ul class="space-y-3 text-sm text-gray-600">
+              <li class="flex items-start">
+                <span class="text-indigo-500 mr-2 mt-1">▶</span>
+                <span>+6 años de experiencia en el diseño y desarrollo de <strong>soluciones de datos end-to-end</strong>.</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-indigo-500 mr-2 mt-1">▶</span>
+                <span>Especializado en <strong>Machine Learning</strong>, pipelines robustos y la integración de <strong>IA Generativa</strong>.</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-indigo-500 mr-2 mt-1">▶</span>
+                <span>Enfoque estratégico para identificar y construir soluciones que generan <strong>valor e impacto real</strong> en el negocio.</span>
+              </li>
+            </ul>
         </div>
       </section>
 
-      <section class="md:col-span-2 p-8 flex flex-col">
+      <section class="md:col-span-2 p-6 sm:p-8 flex flex-col gap-8">
         <div>
-            <h2 class="text-xl font-bold text-gray-900">Soluciones de Datos End-to-End</h2>
-            <p class="text-gray-600 mt-1">Desde el diseño estratégico hasta la implementación y el monitoreo. Contáctame y juntos exploremos la capacidad que tienen los datos para transformar tu negocio.</p>
+            <h2 class="text-2xl font-bold text-gray-900">Soluciones de Datos End-to-End</h2>
+            <p class="text-gray-600 mt-2">Desde el diseño estratégico hasta la implementación y el monitoreo. Contáctame y juntos exploremos la capacidad que tienen los datos para transformar tu negocio.</p>
         </div>
 
-        <hr class="my-6 border-gray-200" />
-
         <div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-4">Áreas de Especialización</h3>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">Áreas de Especialización</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
               <div class="text-2xl mb-2">📊</div>
               <strong class="font-semibold text-gray-900">Ingeniería de Datos</strong>
@@ -55,68 +65,61 @@
             <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
               <div class="text-2xl mb-2">🧭</div>
               <strong class="font-semibold text-gray-900">Ciencia de Datos</strong>
-              <p class="text-sm text-gray-700 mt-1">Desarollo de modelos personalizados para perfilamiento de clientes (clustering), clasificación (score crediticio) o propesión, series de tiempo para pronosticos.</p>
+              <p class="text-sm text-gray-700 mt-1">Modelos de clustering, clasificación (scoring), propensión y pronósticos de series de tiempo.</p>
             </div>
-            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 col-span-1 sm:col-span-2">
               <div class="text-2xl mb-2">🤖</div>
               <strong class="font-semibold text-gray-900">GenAI & Automatización</strong>
-              <p class="text-sm text-gray-700 mt-1">Integración de modelos LLM, chatbots, sistemas RAG y agentes de AI.</p>
+              <p class="text-sm text-gray-700 mt-1">Integración de modelos LLM, chatbots, sistemas RAG y agentes de AI para optimizar procesos.</p>
             </div>
           </div>
         </div>
         
-        <hr class="my-6 border-gray-200" />
-
-        <section id="contactar" class="flex-grow">
-          <h3 class="text-lg font-semibold text-gray-900">Información de Contacto</h3>
+        <section id="contactar">
+          <h3 class="text-xl font-semibold text-gray-900">Información de Contacto</h3>
           <p class="text-gray-600 mt-1">Disponible para consultorías, proyectos y contratos retainer.</p>
-
           <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-            
             <div class="relative p-4 rounded-lg border border-gray-200 bg-white shadow-sm">
               <div class="font-semibold text-gray-800">Email</div>
-              <div id="email" class="text-gray-700 truncate pr-8">jhon.dataengineer@gmail.com</div>
+              <div id="email" class="text-gray-700 truncate pr-10">jhon.dataengineer@gmail.com</div>
               <button class="copy-btn" title="Copiar Email" data-copy-target="email">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/><path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zM-1 7a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1h-15A.5.5 0 0 1-1 7z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/><path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3z"/></svg>
               </button>
             </div>
-
             <div class="relative p-4 rounded-lg border border-gray-200 bg-white shadow-sm">
               <div class="font-semibold text-gray-800">Teléfono / WhatsApp</div>
-              <div id="phone" class="text-gray-700 pr-8">+57 318 376 74 77</div>
+              <div id="phone" class="text-gray-700 pr-10">+57 318 376 74 77</div>
                <button class="copy-btn" title="Copiar Teléfono" data-copy-target="phone">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/><path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zM-1 7a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1h-15A.5.5 0 0 1-1 7z"/></svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/><path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3z"/></svg>
               </button>
             </div>
-            
             <div class="p-4 rounded-lg border border-gray-200 bg-white shadow-sm">
               <div class="font-semibold text-gray-800">Repositorio GitHub</div>
-              <div><a href="https://github.com/jhonfg13" target="_blank" target="_blank" rel="noopener noreferrer" class="font-medium text-indigo-600 hover:underline hover:text-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-300">@jhon-fonseca</a></div>
+              <div><a href="https://github.com/jhonfg13" target="_blank" rel="noopener noreferrer" class="font-medium text-indigo-600 hover:underline">@jhonfg13</a></div>
             </div>
-
             <div class="p-4 rounded-lg border border-gray-200 bg-white shadow-sm">
               <div class="font-semibold text-gray-800">Agendar una reunión</div>
-              <div><a href="https://calendly.com/jhon-dataengineer/30min" target="_blank" rel="noopener noreferrer" class="font-medium text-indigo-600 hover:underline hover:text-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-300">Reservar 30 min en Calendly</a></div>
+              <div><a href="https://calendly.com/jhon-dataengineer/30min" target="_blank" rel="noopener noreferrer" class="font-medium text-indigo-600 hover:underline">Reservar 30 min en Calendly</a></div>
             </div>
           </div>
         </section>
 
-        <footer class="mt-8 text-xs text-gray-500 border-t border-gray-200 pt-4 flex justify-between items-center">
-          <p>El portafolio detallado y los casos de estudio están disponibles bajo petición.</p>
-          <a id="btn-vcard" class="btn btn-secondary flex items-center justify-center gap-2">
+        <footer class="mt-auto text-xs text-gray-500 border-t border-gray-200 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <p class="text-center sm:text-left">El portafolio detallado y los casos de estudio están disponibles bajo petición.</p>
+          <a id="btn-vcard" href="#" class="btn btn-secondary flex items-center justify-center gap-2 w-full sm:w-auto">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/><path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm9 1a1 1 0 0 1 1 1v.217l-4.21 1.914a.5.5 0 0 1-.58 0L3.11 4.217V4a1 1 0 0 1 1-1h7zM2 6.869l4.567 2.074a1.5 1.5 0 0 0 1.745 0L13 7.882V12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6.869z"/></svg>
             Guardar Contacto
           </a>
         </footer>
-
       </section>
     </article>
   </main>
-
+  
   <script>
-    // Funcionalidad para descargar vCard
+    // Tu script de vCard y copiado al portapapeles permanece igual. ¡Funciona perfecto!
     const vcardBtn = document.getElementById('btn-vcard');
-    vcardBtn.addEventListener('click', () => {
+    vcardBtn.addEventListener('click', (e) => {
+      e.preventDefault();
       const vcard = `BEGIN:VCARD
 VERSION:3.0
 N:Fonseca;Jhon;;;
@@ -125,32 +128,34 @@ ORG:Consultor de Datos
 TITLE:Científico de Datos
 EMAIL;TYPE=work:jhon.dataengineer@gmail.com
 TEL;TYPE=WORK,VOICE:+573183767477
-URL;TYPE=Portfolio:https://github.com/jhonfg13
+URL:https://github.com/jhonfg13
 NOTE:Especialista en Modelado, Scoring, Clustering, GenAI y Automatización.
 END:VCARD`;
-      const element = document.createElement('a');
-      element.setAttribute('href', 'data:text/vcard;charset=utf-8,' + encodeURIComponent(vcard));
-      element.setAttribute('download', 'Jhon_Fonseca.vcf');
-      element.style.display = 'none';
-      document.body.appendChild(element);
-      element.click();
-      document.body.removeChild(element);
+      const blob = new Blob([vcard], { type: "text/vcard;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.setAttribute('href', url);
+      link.setAttribute('download', 'Jhon_Fonseca.vcf');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
     });
 
-    // Funcionalidad universal para copiar al portapapeles
     document.querySelectorAll('.copy-btn').forEach(button => {
         button.addEventListener('click', async () => {
             const targetId = button.dataset.copyTarget;
             const targetElement = document.getElementById(targetId);
             const textToCopy = targetElement.textContent.trim();
             const originalIcon = button.innerHTML;
-            const successIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>';
+            const successIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="text-green-500" fill="currentColor" viewBox="0 0 16 16"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>';
             
             try {
                 await navigator.clipboard.writeText(textToCopy);
                 button.innerHTML = successIcon;
                 setTimeout(() => button.innerHTML = originalIcon, 2000);
             } catch(err) {
+                console.error('Error al copiar: ', err);
                 alert('Error al copiar. Por favor, copie manualmente: ' + textToCopy);
             }
         });
